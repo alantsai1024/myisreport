@@ -24,7 +24,7 @@ app.use(session({
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false }
+    cookie: { secure: true }
 }))
 
 //引進cookie
@@ -78,6 +78,6 @@ app.use((req, res, next) => {
 app.use('/', require('./routes/router'))
 app.use('/auth', require('./routes/auth'))
 
-app.listen(port, ip, () => {
-    console.log(`服務運行在：http://${ip}:${port}`);
+app.listen(port, () => {
+    console.log(`服務運行在：http://localhost:${port}`);
 })
