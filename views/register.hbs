@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS_NotLogin/index.css">
+    <link rel="stylesheet" href="/CSS_NotLogin/register.css">
+    <link rel="stylesheet" href="/CSS_NotLogin/RWDforlogin.css">
+    <title>註冊</title>
+</head>
+
+<body>
+
+    <div id="allarea">
+
+        <div id="toparea">
+            <div id="topcontent">
+                <div id="logo"></div>
+                <div id="menu">
+                    <div class="menu" id="homebtn"></div>
+                    <div class="menu" id="rigisterbtn"></div>
+                    <div class="menu" id="loginbtn"> </div>
+                </div>
+
+                <div id="sidemenubtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-list-ul" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <div id="sidemenu">
+                <div class="sidemenu" id="homebtnforside">🏠 首頁</div>
+                <div class="sidemenu" id="rigisterbtnforside">📝 註冊</div>
+                <div class="sidemenu" id="loginbtnforside">🔑 登入</div>
+            </div>
+        </div>
+
+        <div id="bottomarea">
+            <div id="bg1"></div>
+            <div id="bg2"></div>
+            <div id="bg3"></div>
+            <div id="bg4"></div>
+
+            <div id="registercontainer">
+                <div id="registercontent">
+                    <div id="leftregister">
+                        <div id="titforlogo"></div>
+                    </div>
+                    <div id="rightregister">
+
+                        <div id="registerform">
+                            <div id="registerformtitle">註冊</div>
+                            <form action="/auth/register" method="POST">
+
+                                <div class="inputarea">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="orange"
+                                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg>
+                                    <input type="text" name="username" id="username" class="username" placeholder="名稱"
+                                        required>
+                                </div>
+
+                                <div class="inputarea">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue"
+                                        class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                    </svg>
+                                    <input type="email" name="email" id="email" class="email" placeholder="信箱" required>
+                                </div>
+
+                                <div class="inputarea">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red"
+                                        class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
+                                    </svg>
+                                    <input type="password" name="password" id="password" class="password"
+                                        placeholder="密碼" required>
+                                </div>
+
+                                <div class="inputarea">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green"
+                                        class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5" />
+                                    </svg>
+                                    <input type="password" name="passwordconfirm" id="passwordconfirm"
+                                        class="passwordconfirm" placeholder="確認密碼" required>
+                                </div>
+                                <input type="submit" value="註冊" id="registerfunction">
+                            </form>
+                            <div id="hadaccountbtn" onclick="location.href='/login'">已有帳號？前往登入</div>
+                            <div style="color: red; background:pink;font-weight:600;font-size: 30px;">{{message}}</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+</body>
+<script src="/index.js"></script>
+
+</html>

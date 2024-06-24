@@ -1,0 +1,135 @@
+#logincontainer {
+    width: 60%;
+    height: 85%;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    border: 3px solid #ddd;
+    box-shadow: 0 0 8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: aaa 1s ease-in-out;
+}
+
+#logincontent {
+    width: 95%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#verifyfunction {
+    color: black;
+    font-size: 30px;
+    background: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#verifyfunction:hover {
+    color: white;
+    background-color: black;
+}
+
+#leftlogin {
+    width: 47%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2.5px solid #ddd;
+}
+
+#rightlogin {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginform {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginformtitle {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+form .inputarea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+form .inputarea input {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    background: none;
+}
+
+#loginfunction {
+    font-size: 30px;
+    background: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    transition: .5s;
+    color: black;
+}
+
+#loginfunction:hover {
+    color: white;
+    background-color: black;
+}
+
+#notaccount {
+    font-size: 17px;
+    margin-top: 20px;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+
+@keyframes aaa {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
